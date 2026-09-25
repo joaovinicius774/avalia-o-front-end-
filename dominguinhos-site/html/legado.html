@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominguinhos | Legado e Homenagens</title>
+</head>
+<body>
+
+<header>
+    <h1>Dominguinhos — O Mestre da Sanfona</h1>
+    <p>Legado, som e homenagens dos fãs</p>
+</header>
+
+<nav>
+    <p>Menu do site:</p>
+    <ul>
+        <li><a href="index.html">Início / Biografia</a></li>
+        <li><a href="carreira.html">Carreira e Discografia</a></li>
+        <li><a href="legado.html">Legado e Homenagens</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <section>
+        <h2>Um pouco de sanfona</h2>
+        <article>
+            <p>
+                Ouça abaixo <mark>"Sala de Reboco"</mark>, uma das gravações de Dominguinhos, que
+                mostra bem a mistura de forró, baião e improviso que marcou sua sanfona.
+            </p>
+
+            <audio controls>
+                <source src="../audio/dominguinhos-sala-de-reboco.mp3" type="audio/mpeg">
+                Seu navegador não suporta a reprodução de áudio.
+            </audio>
+
+            <p>
+                Outras gravações marcantes de Dominguinhos incluem
+                <cite>"Lamento Sertanejo"</cite> e <cite>"Só Quero um Xodó"</cite>, disponíveis nas
+                principais plataformas oficiais de streaming.
+            </p>
+        </article>
+
+        <blockquote cite="#avaliação">
+            <p>"Não use CSS e nem JavaScript."</p>
+        </blockquote>
+        <p>— frase do professor Israel,.</p>
+    </section>
+
+    <section>
+        <h2>Deixe sua homenagem</h2>
+
+        <p>
+            Preencha o formulário abaixo para registrar sua homenagem a Dominguinhos.
+            Campos com <abbr title="obrigatório">*</abbr> são de preenchimento obrigatório.
+        </p>
+
+        <form action="#" method="get">
+            <p>
+                <label for="nome">Seu nome: *</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+            </p>
+
+            <p>
+                <label for="data-conheceu">Data em que conheceu a música de Dominguinhos:</label><br>
+                <input type="date" id="data-conheceu" name="data-conheceu">
+            </p>
+
+            <p>
+                <label for="musica-favorita">Música favorita:</label><br>
+                <input type="text" id="musica-favorita" name="musica-favorita" list="lista-musicas" placeholder="Ex.: Lamento Sertanejo">
+                <datalist id="lista-musicas">
+                    <option value="Lamento Sertanejo">
+                    <option value="Só Quero um Xodó">
+                    <option value="Sanfona Sentida">
+                    <option value="Chegando de Mansinho">
+                    <option value="Fim de Festa">
+                </datalist>
+            </p>
+
+            <p>
+                <label for="nota">Nota para essa música (0 a 10):</label><br>
+                <input type="range" id="nota" name="nota" min="0" max="10" step="1" value="10">
+                <span>o valor padrão exibido é 10 — não é possível atualizar o número dinamicamente sem JavaScript ou CSS</span>
+            </p>
+
+            <!-- Tive dificuldade em fazer o input type="range" mostrar o valor escolhido ao
+                 lado do controle em tempo real: sem usar JavaScript nem CSS (proibidos neste
+                 trabalho) não existe forma nativa em HTML puro de atualizar um texto conforme
+                 o usuário arrasta o controle. Pesquisei bastante e entendi que isso normalmente
+                 é resolvido com o evento "oninput" em JavaScript, então deixei apenas uma nota
+                 explicando essa limitação. -->
+
+            <p>
+                <label for="foto">Envie uma foto sua curtindo forró (opcional):</label><br>
+                <input type="file" id="foto" name="foto" accept="image/*">
+            </p>
+
+            <p>
+                <label for="mensagem">Sua homenagem:</label><br>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva aqui o que a música de Dominguinhos representa para você" rows="4" cols="40"></textarea>
+            </p>
+
+            <p>
+                <button type="submit">Enviar homenagem</button>
+            </p>
+        </form>
+
+        <details>
+            <summary>Quantas homenagens já foram enviadas?</summary>
+            <p>
+                <label for="meter-homenagens">Nível de engajamento do público com esta homenagem (escala fictícia, apenas ilustrativa):</label><br>
+                <meter id="meter-homenagens" min="0" max="10" value="8" low="3" high="7" optimum="10">8 de 10</meter>
+            </p>
+            <p>
+                <label for="progress-homenagens">Meta simbólica de homenagens do mês:</label><br>
+                <progress id="progress-homenagens" value="65" max="100">65%</progress>
+            </p>
+        </details>
+    </section>
+
+    <aside>
+        <h2>Por que homenagear Dominguinhos?</h2>
+        <p>
+            Reconhecido como herdeiro artístico de Luiz Gonzaga, Dominguinhos ajudou a manter viva
+            a tradição do baião e do forró, ao mesmo tempo em que dialogava com a bossa nova, o
+            choro e a MPB. Seu legado segue presente em festas juninas, rádios e no repertório de
+            novas gerações de sanfoneiros.
+        </p>
+    </aside>
+
+</main>
+
+<footer>
+    <p>Site produzido para a avaliação <time datetime="2026-08-25">25 de setembro de 2026</time>.</p>
+    <p>Navegue pelas outras páginas usando o menu no topo.</p>
+</footer>
+
+</body>
+</html>
