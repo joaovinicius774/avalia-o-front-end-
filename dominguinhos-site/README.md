@@ -1,7 +1,7 @@
 # Dominguinhos — Site em HTML puro
 
 Avaliação sobre o sanfoneiro pernambucano **Dominguinhos** (José Domingos de
-Morais, 1941–2013), desenvolvido em **HTML5 semântico, sem nenhum CSS**.
+Morais, 1941–2013), desenvolvido em **HTML**.
 
 Prova entregue em: **25/08/2026**.
 
